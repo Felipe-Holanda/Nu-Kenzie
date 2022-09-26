@@ -8,7 +8,7 @@ export default function Cards({ props }) {
                 <small>{props.type}</small>
             </div>
             <p>R$ {props.value}</p>
-            <i class='bx bxs-trash-alt'></i>
+            <i class='bx bxs-trash-alt' ></i>
         </li>
     )
 }

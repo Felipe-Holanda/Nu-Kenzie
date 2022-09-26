@@ -17,7 +17,7 @@ export default function Form({ listTransactions, setListTransactions, setTotal, 
                     value: -value,
                     type: type
                 }]);
-                setTotal(total + value);
+                setTotal(total + -value);
             } else {
                 setListTransactions([...listTransactions, {
                     description: description,

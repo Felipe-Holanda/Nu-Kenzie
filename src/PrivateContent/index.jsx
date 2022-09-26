@@ -3,7 +3,6 @@ import Header from "./Header";
 import Form from "./Form";
 import TotalMoney from "./TotalMoney";
 import List from "./List";
-import Cards from "./Cards";
 import { useState } from 'react';
 
 
@@ -20,7 +19,7 @@ export default function PrivateContent({ login, setLogin }) {
                     <Form listTransactions={listTransactions} setListTransactions={setListTransactions} setTotal={setTotal} total={total} />
                     <TotalMoney listTransactions={listTransactions} setListTransactions={setListTransactions} total={total} setTotal={setTotal} />
                 </div>
-                <List listTransactions={listTransactions} setListTransactions={setListTransactions} />
+                <List listTransactions={listTransactions} />
             </main>
         </div>
     )

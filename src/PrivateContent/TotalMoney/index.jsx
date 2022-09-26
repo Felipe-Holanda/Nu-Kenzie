@@ -1,8 +1,7 @@
 import './index.css'
-import { useState } from 'react'
 
 
-export default function TotalMoney({ listTransactions, setListTransactions, total, setTotal }) {
+export default function TotalMoney({ total }) {
 
     return (
         <section>
