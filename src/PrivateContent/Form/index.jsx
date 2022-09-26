@@ -1,6 +1,37 @@
 import './index.css';
 
-export default function Form() {
+export default function Form({ listTransactions, setListTransactions, setTotal, total }) {
+
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        const description = document.getElementById('description').value;
+        const value = parseInt(document.getElementById('value').value);
+        const type = document.getElementById('type').value;
+        if (description.length === 0 || value.length === 0) {
+            alert('Preencha todos os campos!');
+        } else {
+            if (type === 'Despesa') {
+                setListTransactions([...listTransactions, {
+                    description: description,
+                    value: -value,
+                    type: type
+                }]);
+                setTotal(total + value);
+            } else {
+                setListTransactions([...listTransactions, {
+                    description: description,
+                    value: value,
+                    type: type
+                }]);
+                setTotal(total + value);
+            }
+            document.getElementById('description').value = '';
+            document.getElementById('value').value = '';
+            document.getElementById('type').value = 'Entrada';
+        }
+    }
+
     return (
         <form>
             <div className="descriptionField">
@@ -17,12 +48,12 @@ export default function Form() {
                 <div className="typeField">
                     <label htmlFor="type">Tipo</label>
                     <select name="type" id="type">
-                        <option value="0">Entrada</option>
-                        <option value="1">Despesa</option>
+                        <option value="Entrada">Entrada</option>
+                        <option value="Despesa">Despesa</option>
                     </select>
                 </div>
             </div>
-            <button type="submit">Inserir valor</button>
-        </form>
+            <button type="submit" onClick={handleSubmit}>Inserir valor</button>
+        </form >
     )
 }

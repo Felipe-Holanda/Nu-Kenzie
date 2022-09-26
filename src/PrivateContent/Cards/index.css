@@ -1,0 +1,27 @@
+.cards{
+    background-color: var(--grey1);
+    padding: .5em;
+    outline: 1px solid rgba(0,0,0,.1);
+    width: 50em;
+    align-items: flex-start
+}
+
+.cards:hover{
+    background-color: white;
+}
+
+.Entrada{
+    box-shadow: -5px 0 0 var(--color-secondary);
+}
+
+.Despesa{
+    box-shadow: -5px 0 0 var(--color-primary);
+}
+
+i{
+    margin: 1em;
+    background-color: var(--grey2);
+    padding: .5em;
+    border-radius: .2em;
+    cursor: pointer;
+}

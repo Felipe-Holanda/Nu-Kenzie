@@ -1,4 +1,8 @@
-.initPage main{
+body{
+
+}
+
+.initPage{
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: row;
@@ -6,6 +10,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: var(--grey4);
 }
 
 .initPage small{

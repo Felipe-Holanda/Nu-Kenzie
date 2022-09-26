@@ -6,6 +6,7 @@ header{
     padding: 0 2em;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 3em;
 }
 
 header button{
@@ -13,7 +14,7 @@ header button{
     color: black;
     border: none;
     border-radius: .5em;
-    padding: .5em 1em;
+    padding: 1em 2em;
 }
 
 header button:hover{

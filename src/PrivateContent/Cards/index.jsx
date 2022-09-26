@@ -1,13 +1,14 @@
-export default function Cards() {
+import './index.css'
+
+export default function Cards({ props }) {
     return (
-        <li>
-            <span className="income"></span>
+        <li className={`cards ${props.type}`}>
             <div>
-                <h4>TEF Salário</h4>
-                <small>Entrada</small>
+                <h4>{props.description}</h4>
+                <small>{props.type}</small>
             </div>
-            <p>R$ 4.500,00</p>
-            <box-icon className="trash" type='solid' name='trash-alt'></box-icon>
+            <p>R$ {props.value}</p>
+            <i class='bx bxs-trash-alt'></i>
         </li>
     )
 }

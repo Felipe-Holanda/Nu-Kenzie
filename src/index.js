@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './default.css';
-//import InitialPage from './InitialPage';
-
-import PrivateContent from './PrivateContent';
+import Root from './Root';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -12,6 +10,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <PrivateContent />
+    <Root />
   </React.StrictMode>
 );
