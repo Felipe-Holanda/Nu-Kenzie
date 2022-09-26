@@ -1,0 +1,85 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid rgba(0,0,0,.3);
+    padding: 1em
+}
+
+form .descriptionField{
+    display: flex;
+    flex-direction: column;
+}
+
+form .descriptionField input{
+    margin: .5em 0;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: .5em;
+    background-color: var(--grey2);
+}
+
+form .descriptionField small{
+    font-size: .8em;
+    color: var(--grey3);
+}
+
+form .type-n-value{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+form .valueField{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form .valueField input{
+    margin: .5em 0;
+    padding: 1em .2em;
+    width: 10em;
+    border: none;
+    appearance: textfield;
+    border-radius: .5em;
+    background-color: var(--grey2);
+}
+
+form .valueField span{
+    transform: translate(6.5em, -2.5em);
+}
+
+form .typeField{
+    display: flex;
+    flex-direction: column;
+}
+
+form .typeField select{
+    margin: .5em 0;
+    padding: 1em .2em;
+    width: 10em;
+    border: none;
+    appearance: textfield;
+    border-radius: .5em;
+    background-color: var(--grey2);
+}
+
+form button{
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: .5em;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: var(--color-primary-2);
+}
+
+form input:focus{
+    outline: 1px solid black;
+}

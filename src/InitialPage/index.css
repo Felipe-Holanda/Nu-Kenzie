@@ -1,4 +1,4 @@
-main{
+.initPage main{
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: row;
@@ -8,18 +8,18 @@ main{
     align-items: center;
 }
 
-small{
+.initPage small{
     font-size: 12px;
     color: var(--grey1);
 }
 
-.title1{
+.initPage .title1{
     font-weight: bold;
     font-size: 28px;
     color: var(--grey1);
 }
 
-button{
+.initPage button{
     background-color: var(--color-primary);
     color: var(--grey1);
     border: none;
@@ -31,11 +31,11 @@ button{
     width: 75%;
 }
 
-button:hover{
+.initPage button:hover{
     background-color: var(--color-primary-2);
 }
 
-.leftSide{
+.initPage .leftSide{
     display: flex;
     flex-direction: column;
     width: 19%;
@@ -43,27 +43,27 @@ button:hover{
     margin-left: 10em
 }
 
-.rightSide img{
+.initPage .rightSide img{
     width: 80%;
     height: 80%;
 }
 
 @media screen and (max-width: 800px){
     
-    main{
+    .initPage main{
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
     }
     
-    .leftSide{
+    .initPage .leftSide{
         width: 80%;
         margin: 0;
         margin-top: 2em;
         align-items: center;
         text-align: center;
     }
-    .rightSide{
+    .initPage .rightSide{
         margin-left: 3em;
         display: relative;
         align-items: center;

@@ -5,7 +5,7 @@ import nuGroup from './demoDisplay.svg'
 
 export default function InitialPage() {
     return (
-        <main>
+        <main className='initPage'>
             <div className="leftSide">
                 <figure><img src={nuKenzie} /></figure>
                 <h1 className='title1'>Centralize o controle das suas finanças</h1>

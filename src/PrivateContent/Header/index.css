@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: 'Nunito', sans-serif;
+}
+
+header button{
+    background-color: var(--grey2);
+    color: black;
+    border: none;
+    border-radius: .5em;
+    padding: .5em 1em;
+}
+
+header button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+header button:active{
+    color: white;
+    background-color: var(--color-primary-2);
+}
